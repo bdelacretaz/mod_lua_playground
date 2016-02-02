@@ -3,10 +3,8 @@ FROM gliderlabs/alpine:3.3
 
 RUN apk update && apk add --no-cache apache2 apache2-lua apache2-proxy
 
-# troubleshooting stuff
-RUN apk add --no-cache curl vim
-
-# TODO apk clean?
+# Optional troubleshooting stuff
+# RUN apk add --no-cache curl vim
 
 COPY fsroot /
 
